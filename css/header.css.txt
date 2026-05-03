@@ -1,0 +1,142 @@
+:root {
+  --page-bg-color: lightgray;
+  --content-bg-color: #fefcfd;
+  --border-color: #4acc91;
+  --panels-bg-color: #fcfdfe;
+  /* --panels-bg-color: #ecf8ea; */
+
+}
+
+.header {
+  background-color: rgb(19, 22, 26);
+  background-color: var(--panels-bg-color);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  border-top: 3px solid var(--border-color);
+  border-bottom: 2px solid var(--border-color);
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  min-height: 60px;
+  background-color: var(--panels-bg-color);
+  border-top: 2px solid var(--border-color);
+}
+
+header ul {
+  list-style: none;
+}
+
+header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #efedec;
+  color: #121212;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.nav {
+  transition: all 0.3s ease-in-out;
+  background-color: var(--panels-bg-color);
+}
+
+.nav__list {
+  display: flex;
+  column-gap: 40px;
+  background-color: var(--panels-bg-color);
+}
+
+.nav__link {
+  color: #212121;
+  font-size: 15px;
+  transition: color 0.4s ease;
+}
+
+.nav__link:hover,
+.nav__link:focus,
+.nav__link:focus-visible {
+  color: black;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  height: 2px;
+  width: 27px;
+  background: rgba(0, 0, 0, 0.9);
+  margin: 5px 0;
+  opacity: 0.8;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav--open {
+  transform: translate(-12px) !important;
+}
+
+.hamburger--open .bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger--open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger--open .bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+@media (max-width: 800px) {
+  .nav {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    background-color: var(--panels-bg-color);
+    border-top: 3px solid var(--border-color);
+    border-bottom: 3px solid var(--border-color);
+    color: rgba(0, 0, 0, 0.8);
+    font-family: "Roboto Condensed", sans-serif;
+    width: 100%;
+    padding: 10px 0 12px;
+    transform: translateX(-100%);
+  }
+
+  .nav__list {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 25px;
+  }
+
+  .nav__link {
+    font-size: 1.5rem;
+    color: #333;
+    font-family: "Roboto Condensed", sans-serif;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .nav__link:hover {
+    color: black;
+    opacity: 1;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+@media (min-width: 801px) {
+  .header {
+    display: none;
+  }
+}
