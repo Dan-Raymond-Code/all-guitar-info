@@ -1023,7 +1023,7 @@ dialog[open]::backdrop {
 
 summary {
   background-color: var(--panels-bg-color);
-  padding: 0.65rem 1rem 0.65rem 0.15rem;
+  padding: 0.65rem 1rem 0.65rem 0.5rem;
   display: flex;
   justify-content: space-between;
   border-bottom: 2px solid var(--summary-bg-color);
@@ -1081,7 +1081,7 @@ details span.icon::after {
   transition: all 0.35s ease;
 }
 
-details span.question::before {
+/* details span.question::before {
   font-family: "Font Awesome 6 Free";
   font-size: 1.75rem;
   content: "";
@@ -1089,15 +1089,15 @@ details span.question::before {
   color: #222323ea;
   cursor: pointer;
   transition: all 0.35s ease;
-}
+} */
 
 details[open] span.icon::after {
   transform: rotate(-540deg);
 }
 
-details[open] span.question::before {
+/* details[open] span.question::before {
   transform: rotate(-540deg);
-}
+} */
 
 ::details-content {
   transition:
