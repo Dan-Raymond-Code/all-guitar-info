@@ -1084,7 +1084,7 @@ details span.icon::after {
   transition: all 0.35s ease;
 }
 
-/* details span.question::before {
+details span.question::before {
   font-family: "Font Awesome 6 Free";
   font-size: 1.75rem;
   content: "";
@@ -1092,7 +1092,7 @@ details span.icon::after {
   color: #222323ea;
   cursor: pointer;
   transition: all 0.35s ease;
-} */
+}
 
 details[open] span.icon::after {
   transform: rotate(-540deg);
