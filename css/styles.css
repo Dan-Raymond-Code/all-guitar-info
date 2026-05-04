@@ -529,6 +529,8 @@ blockquote > div > div > cite {
     column-gap: 0.65rem;
 
     .pitch-section-img {
+      overflow: hidden;
+
       img {
         max-width: 70px;
         margin-block-start: 0.25rem;
@@ -536,6 +538,10 @@ blockquote > div > div > cite {
         -moz-border-radius: 0.85rem;
         -webkit-border-radius: 0.85rem;
         border: 2px solid var(--pitch-section-border-color);
+
+        -webkit-mask-image: -webkit-radial-gradient(white, black);
+
+        transform: translateZ(0);
 
         @media (min-width: 800px) {
           max-width: 80px;
