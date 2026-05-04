@@ -531,8 +531,10 @@ blockquote > div > div > cite {
     .pitch-section-img {
       img {
         max-width: 70px;
-        margin-top: 0.25rem;
+        margin-block-start: 0.25rem;
         border-radius: 0.85rem;
+        -moz-border-radius: 0.85rem;
+        -webkit-border-radius: 0.85rem;
         border: 2px solid var(--pitch-section-border-color);
 
         @media (min-width: 800px) {
