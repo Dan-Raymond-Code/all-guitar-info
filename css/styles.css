@@ -1037,8 +1037,10 @@ summary {
     0px 1px 5px 0px rgba(0, 0, 0, 0.12);
 }
 
-summary::marker {
+summary::marker,
+summary::-webkit-details-marker {
   display: none;
+  content: "";
 }
 
 details {
