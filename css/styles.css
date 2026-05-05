@@ -351,13 +351,17 @@ blockquote > div > div > cite {
 .pitch-section2 {
   border: 3px solid var(--pitch-section-border-color);
   border-radius: 14px;
-  padding: 0.5rem 1rem;
+  padding: 0.35rem;
   margin-block-end: 1rem;
   background: white;
   animation: fadeIn 1.5s;
 
   p:last-of-type {
     margin-block-end: 0;
+  }
+
+  @media (min-width: 800px) {
+    padding: 1rem;
   }
 }
 
@@ -391,7 +395,7 @@ blockquote > div > div > cite {
 }
 
 .pitch-section2 .pitch-section-body {
-  padding: 0.5rem;
+  padding: 0.35rem;
   color: #0e0e0e;
   clear: both;
 }
