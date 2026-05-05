@@ -351,7 +351,7 @@ blockquote > div > div > cite {
 .pitch-section2 {
   border: 3px solid var(--pitch-section-border-color);
   border-radius: 14px;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   margin-block-end: 1rem;
   background: white;
   animation: fadeIn 1.5s;
@@ -394,7 +394,7 @@ blockquote > div > div > cite {
 .pitch-section {
   border: 3px solid var(--pitch-section-border-color);
   border-radius: 14px;
-  padding: 0.25rem 0.25rem 0.5rem;
+  padding: 0.5rem 1rem;
   margin-block-end: 1rem;
   background: white;
   animation: fadeIn 1.5s;
