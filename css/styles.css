@@ -527,11 +527,14 @@ blockquote > div > div > cite {
   .pitch-section-heading {
     display: flex;
     display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
     gap: 0 0.65rem;
+    margin-inline-start: 0.5rem;
     overflow: hidden;
 
     .pitch-section-heading__img {
-      margin-block-start: 0.5rem;
+      margin-block-start: 0.35rem;
       border-radius: 0.85rem;
       max-width: 70px;
       max-height: 70px;
@@ -553,7 +556,7 @@ blockquote > div > div > cite {
   }
 
   .pitch-section-body {
-    padding: 0.5rem;
+    padding: 1rem;
 
     p:first-child {
       margin-block-start: 0;
