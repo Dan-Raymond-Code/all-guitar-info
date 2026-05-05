@@ -359,36 +359,36 @@ blockquote > div > div > cite {
   p:last-of-type {
     margin-block-end: 0;
   }
+}
 
-  .pitch-section-heading {
-    overflow: hidden;
+.pitch-section-heading2 {
+  overflow: hidden;
+}
 
-    .pitch-section-heading__img {
-      float: left;
-      margin-right: 0.7rem;
-      border-radius: 14px;
-      max-width: 70px;
-      max-height: 70px;
-      -moz-border-radius: 14px;
-      -webkit-border-radius: 14px;
-      border: 2px solid var(--pitch-section-border-color);
+.pitch-section-heading2__img {
+  float: left !important;
+  margin-right: 0.7rem;
+  border-radius: 14px !important;
+  max-width: 70px;
+  max-height: 70px;
+  -moz-border-radius: 14px;
+  -webkit-border-radius: 14px;
+  border: 2px solid var(--pitch-section-border-color) !important;
 
-      @media (min-width: 800px) {
-        max-width: 80px;
-        max-height: 80px;
-      }
-    }
-
-    .pitch-section-heading__head {
-      text-align: left;
-      margin-top: -0.15rem;
-      padding-top: 0;
-    }
-
-    .pitch-section-heading__head::after {
-      clear: both;
-    }
+  @media (min-width: 800px) {
+    max-width: 80px;
+    max-height: 80px;
   }
+}
+
+.pitch-section-heading2__head {
+  text-align: left;
+  margin-top: -0.15rem;
+  padding-top: 0;
+}
+
+.pitch-section-heading2__head::after {
+  clear: both;
 }
 
 .pitch-section {
@@ -450,6 +450,7 @@ blockquote > div > div > cite {
   .pitch-section-body {
     padding: 0.5rem;
     color: #214212;
+    color: #0f0f0f;
 
     p:first-child {
       margin-block-start: 0;
