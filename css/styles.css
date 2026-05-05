@@ -319,7 +319,7 @@ blockquote > div > div > cite {
 }
 
 .grid-content h2 {
-  margin-block-start: 0.75rem;
+  /* margin-block-start: 0.75rem; */
   font-family: "Roboto Condensed", sans-serif;
   font-size: 1.6rem;
 }
@@ -361,11 +361,11 @@ blockquote > div > div > cite {
   }
 }
 
-.pitch-section-heading2 {
+.pitchsection2 .pitch-section-heading {
   overflow: hidden;
 }
 
-.pitch-section-heading2__img {
+.pitch-section2 .pitch-section-heading__img {
   float: left !important;
   margin-right: 0.7rem;
   border-radius: 14px !important;
@@ -381,13 +381,13 @@ blockquote > div > div > cite {
   }
 }
 
-.pitch-section-heading2__head {
+.pitch-section2 .pitch-section-heading__head {
   text-align: left;
   margin-top: -0.15rem;
   padding-top: 0;
 }
 
-.pitch-section-heading2__head::after {
+.pitch-section2 .pitch-section-heading__head::after {
   clear: both;
 }
 
