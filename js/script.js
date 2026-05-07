@@ -91,6 +91,10 @@ window.onscroll = function () {
 
 document.querySelector("#scrollTopBtn")?.addEventListener("click", topFunction);
 
+document
+  .querySelector("#scrollTopBtn")
+  ?.addEventListener("touchstart", topFunction);
+
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     scrollTopBtn.style.display = "block";
