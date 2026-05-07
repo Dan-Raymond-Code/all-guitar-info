@@ -1202,8 +1202,15 @@ figcaption {
   font-size: 24px; /* Increase font size */
 }
 
-#scrollTopBtn:hover {
-  background-color: #303030; /* Add a dark-grey background on hover */
+@media (min-width: 992px) {
+  /* apply hover effects to scroll-to-top button only on larger screens */
+  #scrollTopBtn {
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  #scrollTopBtn:hover {
+    background-color: #303030;
+  }
 }
 
 .logo-container {
